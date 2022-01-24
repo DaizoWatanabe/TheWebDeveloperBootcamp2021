@@ -1,0 +1,64 @@
+<% layout('layouts/boilerplate') %>
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h2>YelpCamp</h2>
+        <div class="list-group">
+          <a href="#" class="list-group-item active">Item 1</a>
+          <a href="#" class="list-group-item">Item 2</a>
+          <a href="#" class="list-group-item">Item 3</a>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="card">
+          <img src="<%= campground.image %> " alt="" class="card-img-top img-fluid">
+          <div class="card-body">
+            <h4 class="float-right">$ <%= campground.price %></h4>
+            <h1 class="card-title"><%= campground.title %></h5>
+            <smal class="text-muted"><%= campground.location %> </smal>
+            <p class="card-text"><%= campground.description %></p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div> -->
+
+
+  <div class="row">
+    <div class="col-6 offset-3">
+      <div class="card mb-3">
+        <img src="<%= campground.image %> " class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title"><%= campground.title %> </h5>
+          <p class="card-text"><%= campground.description %> </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item text-muted"><%= campground.location %> </li>
+          <li class="list-group-item">$<%= campground.price %>/Night </li>
+        </ul>
+        <div class="card-body d-flex">
+          <a class="class-link btn btn-info mx-3" href="/campgrounds/<%= campground._id %>/edit">Update</a>
+          <form action="/campgrounds/<%= campground._id%>?_method=DELETE" method="POST">
+            <button class="class-link btn btn-danger mx-3">Delete</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <h1><%= campground.title %></h1>
+<h3><%= campground.location %></h3>
+<img src="<%= campground.image %> " alt="">
+<p><%= campground.description %> </p> -->
+
+  <!-- <a href="/campgrounds/<%= campground._id %>/edit">Edit</a>
+  <form action="/campgrounds/<%= campground._id%>?_method=DELETE" method="POST">
+    <button>Delete</button>
+  </form>
+  <form action="/campgrounds" method="GET">
+    <button>All Campgrounds</button>
+  </form> -->
