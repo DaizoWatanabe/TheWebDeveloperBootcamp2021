@@ -1,0 +1,92 @@
+/* element selector */
+body {
+  background-color: #f1faee;
+}
+
+/* multiple elements selector */
+h1,
+h2 {
+  color: #1d3557;
+}
+
+/* element selector */
+button {
+  font-size: 30px;
+  background-color: #a8dadc;
+}
+
+/* id selector */
+#signup {
+  background-color: #1d3557;
+  color: #f1faee;
+}
+
+/* element selector */
+span {
+  color: #457b9d;
+}
+
+/* class selector */
+.tag {
+  background-color: #e63946;
+  color: #f1faee;
+  font-size: 16px;
+}
+
+/* Descendent selector (the a tag is inside a span inside a section with a class "post") */
+.post a {
+  color: #457b9d;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Descendent selector (the a tag is inside a li inside a ul inside a nav inside a footer) */
+footer a {
+  color: #e63946;
+}
+
+/* Adjacent selector (the button tag comes immediately after an h2 */
+h2 + button {
+  font-size: 20px;
+}
+
+/* Direct descendent/child selector/combinator (the direct child of another tag */
+footer > a {
+  color: #457b9d;
+}
+
+/* Attribute selector (only applies the styles to the element with the specific attribute type */
+input[type='password'] {
+  color: greenyellow;
+}
+
+/* !!!!!!!PSEUDO CLASSES DOWN BELOW!!!!!!! */
+
+/* applies styles to all anchor tags when hover */
+a:hover {
+  color: orange;
+}
+
+button:hover {
+  background-color: #e63946;
+  color: #f1faee;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+.post button:active {
+  background-color: #02c39a;
+}
+
+.post:nth-last-of-type(2n) {
+  background-color: lightgray;
+}
+
+/* PSEUDO ELEMENTS DOWN BELOW */
+
+/* applies styling only to first letter using the ::first-letter pseudo element */
+h2::first-letter {
+  font-size: 50px;
+}
