@@ -20,7 +20,7 @@ const verifyPassword = (req, res, next) => {
   //res.send("SORRY YOU NEED A PASSWORD!");
   //below is a way to throw an error
   //throw new Error("SORRY YOU NEED A PASSWORD");
-  throw new AppError('Password is required', 401);
+  throw new AppError("Password is required", 401);
 };
 
 app.use("/dogs", (req, res, next) => {
@@ -46,16 +46,25 @@ app.get("/error", (req, res) => {
   chicken.fly();
 });
 
+app.get("/admin", (req, res) => {
+  throw new AppError("You are not an admin", 403);
+});
+
 app.use((req, res, next) => {
   res.status(404).send("NOT FOUND - 404 ERROR");
 });
 
+// app.use((err, req, res, next) => {
+//   console.log("*******************************");
+//   console.log("**************ERROR************");
+//   console.log("*******************************");
+//   console.log(err);
+//   next(err);
+// });
+
 app.use((err, req, res, next) => {
-  console.log("*******************************");
-  console.log("**************ERROR************");
-  console.log("*******************************");
-  console.log(err);
-  next(err);
+  const { status = 500, message = "Something Went Wrong" } = err;
+  res.status(status).send(message);
 });
 
 app.listen(3000, () => {
