@@ -100,11 +100,11 @@ app.delete('/products/:id', wrapAsync(async (req, res) => {
 app.use((err, req, res, next) => {
     const {status = 500, message = 'Something Went Wrong'} = err;
     res.status(status).send(message);
-})
+});
 
 
 app.listen(3000, () => {
     console.log("APP IS LISTENING ON PORT 3000!")
-})
+});
 
 

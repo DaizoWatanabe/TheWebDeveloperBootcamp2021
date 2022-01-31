@@ -1,0 +1,12 @@
+<% layout('/layouts/errorplate.ejs') %>
+  <div class="row">
+    <div class="col-6 offset-3">
+      <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading"><%= err.message %></h4>
+        <p class="text-break"><%= err.stack %></p>
+        <!-- <div style="overflow-wrap: break-word;">
+          <%= err.stack %>
+      </div> -->
+      </div>
+    </div>
+  </div>
