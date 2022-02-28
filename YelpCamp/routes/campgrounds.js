@@ -49,18 +49,17 @@ router.post(
       image,
     });
     await campground.save();
+    req.flash('success', 'Succesfully made a new campground')
     res.redirect(`/campgrounds/${campground._id}`);
   })
 );
 
-router.get(
-  "/:id",
-  catchAsync(async (req, res, next) => {
-    const campground = await Campground.findById(req.params.id).populate(
-      "reviews"
-    );
+router.get("/:id", catchAsync(async (req, res, next) => {
+    const campground = await Campground.findById(req.params.id).populate("reviews");
     if (!campground) {
-      next(new ExpressError("Campground not found", 404));
+      //next(new ExpressError("Campground not found", 404));
+      req.flash('error', 'Cannot find that campground!')
+      return res.redirect('/campgrounds')
     }
     res.render("campgrounds/show", { campground });
   })
@@ -71,7 +70,12 @@ router.get(
   catchAsync(async (req, res, next) => {
     const campground = await Campground.findById(req.params.id);
     if (!campground) {
-      next(new ExpressError("Campground not found", 404));
+      //next(new ExpressError("Campground not found", 404));
+      if (!campground) {
+        //next(new ExpressError("Campground not found", 404));
+        req.flash('error', 'Cannot find that campground!')
+        return res.redirect('/campgrounds')
+      }
     }
     const array = campground.location.split(","); //since I used 2 fields for location (city and state) I had to trim
     const city = array[0];
@@ -80,21 +84,14 @@ router.get(
   })
 );
 
-router.put(
-  "/:id",
-  validateCampground,
-  catchAsync(async (req, res, next) => {
+router.put("/:id", validateCampground, catchAsync(async (req, res, next) => {
     const { id } = req.params;
     const { city, state } = req.body.campground;
     const location = `${city}, ${state}`;
-    const campground = await Campground.findByIdAndUpdate(id, {
-      ...req.body.campground,
-      location,
-    });
-    if (!campground) {
-      next(new ExpressError("Campground not found", 404));
-    }
+    const campground = await Campground.findByIdAndUpdate(id, {...req.body.campground, location,});
+    if (!campground) {next(new ExpressError("Campground not found", 404))}
     await campground.save();
+    req.flash('success', 'Succesfully updated the campground!')
     res.redirect(`/campgrounds/${campground._id}`);
   })
 );
@@ -104,6 +101,7 @@ router.delete(
   catchAsync(async (req, res, next) => {
     const { id } = req.params;
     await Campground.findByIdAndDelete(id);
+    req.flash('success', 'Successfully deleted campground!')
     res.redirect("/campgrounds");
   })
 );
