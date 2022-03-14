@@ -4,6 +4,7 @@ const router = express.Router();
 const Campground = require("../models/campground");
 
 const { campgroundSchema } = require("../schemas");
+const { isLoggedIn } = require('../middleware')
 
 const catchAsync = require("../utils/catchAsync");
 const ExpressError = require("../utils/ExpressError");
@@ -29,7 +30,7 @@ router.get(
   })
 );
 
-router.get("/new", (req, res) => {
+router.get("/new", isLoggedIn, (req, res) => {
   res.render("campgrounds/new");
 });
 
