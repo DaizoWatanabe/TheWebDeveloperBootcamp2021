@@ -12,331 +12,327 @@ Section 3: HTML: The Essentials (16 lessons)<br>
 -Elements<br>
 -Some initial tags<br>
 
-Section 4: HTML: Next Steps & Semantics (10 lessons)
--HTML5
--Block vs. Inline Elements
--Semantic Markup
+Section 4: HTML: Next Steps & Semantics (10 lessons)<br>
+-HTML5<br>
+-Block vs. Inline Elements<br>
+-Semantic Markup<br>
 
-Section 5: HTML: Forms & Tables (19 lessons)
--Tables
--Form
--Label
--Buttons
--Form Validations
+Section 5: HTML: Forms & Tables (19 lessons)<br>
+-Tables<br>
+-Form<br>
+-Label<br>
+-Buttons<br>
+-Form Validations<br>
 
-Section 6: CSS: The Very Basics (14 lessons)
--Introduction
--Color & Background-Color
--Common Text Properties
--Font
+Section 6: CSS: The Very Basics (14 lessons)<br>
+-Introduction<br>
+-Color & Background-Color<br>
+-Common Text Properties<br>
+-Font<br>
 
-Section 7: The World of CSS Selectors (18 lessons)
--Universal & Element Selectors
--Class, ID, Descendant, Adjacent, Direct-Descendant, Attribute Selectors
--Pseudo Classes
--Pseudo Elements
--Styles
+Section 7: The World of CSS Selectors (18 lessons)<br>
+-Universal & Element Selectors<br>
+-Class, ID, Descendant, Adjacent, Direct-Descendant, Attribute Selectors<br>
+-Pseudo Classes<br>
+-Pseudo Elements<br>
+-Styles<br>
 
-Section 8: The CSS Box Model (10 lessons)
--Box Model
--Display Property
--CSS Units
+Section 8: The CSS Box Model (10 lessons)<br>
+-Box Model<br>
+-Display Property<br>
+-CSS Units<br>
 
-Section 9: Other Assorted Useful CSS Properties (10 lessons)
--Opacity & The Alpha Channel
--Position Property
--CSS Transitions
--Fancy Effects
+Section 9: Other Assorted Useful CSS Properties (10 lessons)<br>
+-Opacity & The Alpha Channel<br>
+-Position Property<br>
+-CSS Transitions<br>
+-Fancy Effects<br>
 
-Section 10: Responsive CSS & Flexbox (12 lessons)
--Flex-Direction
--Justify-Content
--Flex-Wrap
--Align-Items
--Media Queries
+Section 10: Responsive CSS & Flexbox (12 lessons)<br>
+-Flex-Direction<br>
+-Justify-Content<br>
+-Flex-Wrap<br>
+-Align-Items<br>
+-Media Queries<br>
 
-Section 11: Prcing Panel Project (6 lessons)
--Princing Panel Code Along Pt. 1 ~ 6
+Section 11: Prcing Panel Project (6 lessons)<br>
+-Princing Panel Code Along Pt. 1 ~ 6<br>
 
-Section 12: CSS Frameworks: Bootstrap (16 lessons)
--Introduction
--Containers
--Buttons
--Alerts
--Bootstrap Grid
--Bootstrap Forms
--Bootstrap Navbars
--Bootstrap Icons
--Other Utilities
+Section 12: CSS Frameworks: Bootstrap (16 lessons)<br>
+-Introduction<br>
+-Containers<br>
+-Buttons<br>
+-Alerts<br>
+-Bootstrap Grid<br>
+-Bootstrap Forms<br>
+-Bootstrap Navbars<br>
+-Bootstrap Icons<br>
+-Other Utilities<br>
 
-Section 13: Museum of Candy Project (7 lessons)
--Project
+Section 13: Museum of Candy Project (7 lessons)<br>
+-Project<br>
 
-Section 14: JavaScript Basics (15 lessons)
--Primitives & The Console
--NaN
--Variables & Let
--Const & Var
+Section 14: JavaScript Basics (15 lessons)<br>
+-Primitives & The Console<br>
+-NaN<br>
+-Variables & Let<br>
+-Const & Var<br>
 
-Section 15: JavaScript Strings and More (13 lessons)
--Introduction
--Indices & Lenght
--String Methods
+Section 15: JavaScript Strings and More (13 lessons)<br>
+-Introduction<br>
+-Indices & Lenght<br>
+-String Methods<br>
 
-Section 16: JavaScript Decision Making (20 lessons)
--Comparison Operators
--Equality
--Console, Alert & Prompt
--If, Else-If, Else
--Nesting Conditionals
--Truth-y & False-y Values
--Loginal OR, NOT, AND
--Switch Statement
+Section 16: JavaScript Decision Making (20 lessons)<br>
+-Comparison Operators<br>
+-Equality<br>
+-Console, Alert & Prompt<br>
+-If, Else-If, Else<br>
+-Nesting Conditionals<br>
+-Truth-y & False-y Values<br>
+-Loginal OR, NOT, AND<br>
+-Switch Statement<br>
 
-Section 17: JavaScript Arrays (14 lessons)
--Introduction
--Push & Pop
--Shift & Unshift
--Concat, indexOf, includes & reverse
--Slice & Splice
--Multi-Dimensional Arrays
+Section 17: JavaScript Arrays (14 lessons)<br>
+-Introduction<br>
+-Push & Pop<br>
+-Shift & Unshift<br>
+-Concat, indexOf, includes & reverse<br>
+-Slice & Splice<br>
+-Multi-Dimensional Arrays<br>
 
-Section 18: JavaScript Object Litereals (8 lessons)
--Creating Object Literals
--Nesting Arrays & Objects
+Section 18: JavaScript Object Litereals (8 lessons)<br>
+-Creating Object Literals<br>
+-Nesting Arrays & Objects<br>
 
-Secion 19: Repeating Stuff With Loops (17 lessons)
--For
--Looping Over Arrays
--Nested Loops
--Break Keyword
--For...Of Loop
--Todo List Project
+Secion 19: Repeating Stuff With Loops (17 lessons)<br>
+-For<br>
+-Looping Over Arrays<br>
+-Nested Loops<br>
+-Break Keyword<br>
+-For...Of Loop<br>
+-Todo List Project<br>
 
-Section 20: Introducing Functions (15 lessons)
--Intro
--Arguments
--Return Keyword
+Section 20: Introducing Functions (15 lessons)<br>
+-Intro<br>
+-Arguments<br>
+-Return Keyword<br>
 
-Section 21: Leveling Up Our Functions (14 lessons)
--Function Scope, Block Scope, Lexical Scope
--Function Expressions
--Returning Functions
--Methods
--Try/Catch
+Section 21: Leveling Up Our Functions (14 lessons)<br>
+-Function Scope, Block Scope, Lexical Scope<br>
+-Function Expressions<br>
+-Returning Functions<br>
+-Methods<br>
+-Try/Catch<br>
 
-Section 22: Callbacks & Array Methods (16 lessons)
--forEach Method
--map Method
--Arrow Functions
--setTimeout and setInterval
--filter Method
--Some & Every Methods
--The Notorious Reduce Method
--Arrow Functions & 'this'
+Section 22: Callbacks & Array Methods (16 lessons)<br>
+-forEach Method<br>
+-map Method<br>
+-Arrow Functions<br>
+-setTimeout and setInterval<br>
+-filter Method<br>
+-Some & Every Methods<br>
+-The Notorious Reduce Method<br>
+-Arrow Functions & 'this'<br>
 
-Section 23: Newer JavaScript Features (9 lessons)
--Default Params
--Spred in Function Calls, Array Literals and Objects
--Rest Params
--Destructuring Arrays, Objects & Params
+Section 23: Newer JavaScript Features (9 lessons)<br>
+-Default Params<br>
+-Spred in Function Calls, Array Literals and Objects<br>
+-Rest Params<br>
+-Destructuring Arrays, Objects & Params<br>
 
-Section 24: Introducing The World Of The DOM (22 lessons)
--Intro
--Document Object
--getElementById
--getElementsByTagName & className
--querySelector & querySelectorAll
--innerHTML, textContent, & innerText
--Attributes
--Append & AppendChild
--removeChild & remove
+Section 24: Introducing The World Of The DOM (22 lessons)<br>
+-Intro<br>
+-Document Object<br>
+-getElementById<br>
+-getElementsByTagName & className<br>
+-querySelector & querySelectorAll<br>
+-innerHTML, textContent, & innerText<br>
+-Attributes<br>
+-Append & AppendChild<br>
+-removeChild & remove<br>
 
-Section 25: The Missing Piece: DOM Events (18 lessons)
--Intro
--Inline Events
--Onclick Property
--addEventListener
--Events & The Keyword This
--Form Events & PreventDefault
--Form Events & PreventDefault
--Event Bubbling and Delegation
+Section 25: The Missing Piece: DOM Events (18 lessons)<br>
+-Intro<br>
+-Inline Events<br>
+-Onclick Property<br>
+-addEventListener<br>
+-Events & The Keyword This<br>
+-Form Events & PreventDefault<br>
+-Form Events & PreventDefault<br>
+-Event Bubbling and Delegation<br>
 
-Section 26: Score Keeper CodeAlong (4 lessons)
--Project
+Section 26: Score Keeper CodeAlong (4 lessons)<br>
+-Project<br>
 
-Section 27: Async Javascript (11 lessons)
--The Call Stack
--Callback Hell :(
--Demo: fakeRequest Using Callbacks
--Demo: fakeRequest Using Promises
--The Async Keyword
--The Await Keyword
--Handling Errors In Async Functions
+Section 27: Async Javascript (11 lessons)<br>
+-The Call Stack<br>
+-Callback Hell :(<br>
+-Demo: fakeRequest Using Callbacks<br>
+-Demo: fakeRequest Using Promises<br>
+-The Async Keyword<br>
+-The Await Keyword<br>
+-Handling Errors In Async Functions<br>
 
-Section 28: AJAX and API's (14 lessons)
--Intro to AJAX, APIs, JSON
--Postman
--HTTP Verbs, Status Codes, Query Strings, Headers
--Making XHRs
--Fetch API
--Axios
+Section 28: AJAX and API's (14 lessons)<br>
+-Intro to AJAX, APIs, JSON<br>
+-Postman<br>
+-HTTP Verbs, Status Codes, Query Strings, Headers<br>
+-Making XHRs<br>
+-Fetch API<br>
+-Axios<br>
 
-Section 29: Prototypes, Classes, & OOP (8 lessons)
--Intro to Oriented Programming and Prototypes
--Factory Functions
--Constructor Functions
--JavaScript Classes
--Extends and Super Keywords
+Section 29: Prototypes, Classes, & OOP (8 lessons)<br>
+-Intro to Oriented Programming and Prototypes<br>
+-Factory Functions<br>
+-Constructor Functions<br>
+-JavaScript Classes<br>
+-Extends and Super Keywords<br>
 
-Section 30: Mastering The Terminal (12 lessons)
--Backend Overview
--GitBash, PowerShell, Shell
--Changing, Making Directories
--Touch Command
--Removing Files & Folders
+Section 30: Mastering The Terminal (12 lessons)<br>
+-Backend Overview<br>
+-GitBash, PowerShell, Shell<br>
+-Changing, Making Directories<br>
+-Touch Command<br>
+-Removing Files & Folders<br>
 
-Section 31: Our First Brush With Node (8 lessons)
--Intro Node JS
--Node REPL
--Process & Argv
+Section 31: Our First Brush With Node (8 lessons)<br>
+-Intro Node JS<br>
+-Node REPL<br>
+-Process & Argv<br>
 
-Section 32: Exploring Modules & The NPM Universe (9 lessons)
--module.exports
--NPM
--Package.json
--Language Guesser Challenge
+Section 32: Exploring Modules & The NPM Universe (9 lessons)<br>
+-module.exports<br>
+-NPM<br>
+-Package.json<br>
+-Language Guesser Challenge<br>
 
-Section 33: Creating Servers With Express (8 lessons)
--Intro
--Express App
--Request & Response Objects
--Routing
--Path
--Nodemon
+Section 33: Creating Servers With Express (8 lessons)<br>
+-Intro<br>
+-Express App<br>
+-Request & Response Objects<br>
+-Routing<br>
+-Path<br>
+-Nodemon<br>
 
-Section 34: Creating Dynamic HTML With Templating (13 lessons)
--EJS
--Passing Data to Templates
--Conditionals and Loops in EJS
--Bootstrap + Express
--EJS & Partials
+Section 34: Creating Dynamic HTML With Templating (13 lessons)<br>
+-EJS<br>
+-Passing Data to Templates<br>
+-Conditionals and Loops in EJS<br>
+-Bootstrap + Express<br>
+-EJS & Partials<br>
 
-Section 35: Defining RESTful Routes (14 lessons)
--Get vs Post Requests
--Intro to REST
--RESTful "Comments" Index, New, Show, Update, Delete
--Express Redirects
+Section 35: Defining RESTful Routes (14 lessons)<br>
+-Get vs Post Requests<br>
+-Intro to REST<br>
+-RESTful "Comments" Index, New, Show, Update, Delete<br>
+-Express Redirects<br>
 
-Section 36: Our First Database: MongoDB (13 lessons)
--Intro
--SQL vs NoSQL
--Mongo Shell
--Mongo Practices (inserting, finding, updating, deleting and additional operators)
+Section 36: Our First Database: MongoDB (13 lessons)<br>
+-Intro<br>
+-SQL vs NoSQL<br>
+-Mongo Shell<br>
+-Mongo Practices (inserting, finding, updating, deleting and additional operators)<br>
 
-Section 37: Connecting To Mongo With Mongoose (16 lessons)
--Intro Mongoose
--Mongoose Model
--Mongoose Practices (inserting, finding, updating, deleting and additional operators)
--Schema
--Validation Errors
--Mongoose Middleware
+Section 37: Connecting To Mongo With Mongoose (16 lessons)<br>
+-Intro Mongoose<br>
+-Mongoose Model<br>
+-Mongoose Practices (inserting, finding, updating, deleting and additional operators)<br>
+-Schema<br>
+-Validation Errors<br>
+-Mongoose Middleware<br>
 
-Section 38: Putting It All Together: Mongoose With Express (10 lessons)
--Basic Setup
--Model
--Practices
+Section 38: Putting It All Together: Mongoose With Express (10 lessons)<br>
+-Basic Setup<br>
+-Model<br>
+-Practices<br>
 
-Section 39: YelpCamp: Campgrounds CRUD (10 lessons)
--Introduction to this Bootcamp Massive Project
--Models
--Seeding
--Routing and Views (index, show, new, update, delete)
+Section 39: YelpCamp: Campgrounds CRUD (10 lessons)<br>
+-Introduction to this Bootcamp Massive Project<br>
+-Models<br>
+-Seeding<br>
+-Routing and Views (index, show, new, update, delete)<br>
 
-Section 40: Middleware: The Key To Express (8 lessons)
--Intro
--404 Route
+Section 40: Middleware: The Key To Express (8 lessons)<br>
+-Intro<br>
+-404 Route<br>
 
-Section 41: YelpCamp: Adding Basic Styles (9 lessons)
--Boilerplate
--Navbar Partial
--Footer Partial
--Styling the views and forms
+Section 41: YelpCamp: Adding Basic Styles (9 lessons)<br>
+-Boilerplate<br>
+-Navbar Partial<br>
+-Footer Partial<br>
+-Styling the views and forms<br>
 
-Section 42: Handling Errors In Express Apps (8 lessons)
--Built-In Error Handler
--Custom Error Handlers
--Error Class
--Handling Async Erros
--Differentiating Mongoose Errors
+Section 42: Handling Errors In Express Apps (8 lessons)<br>
+-Built-In Error Handler<br>
+-Custom Error Handlers<br>
+-Error Class<br>
+-Handling Async Erros<br>
+-Differentiating Mongoose Errors<br>
 
-Section 43: YelpCamp: Errors & Validating Data (8 lessons)
--Client-Side Form Validations
--ExpressError Class
--Error Template
--JOI Schema Validations
--JOI Validation Middleware
+Section 43: YelpCamp: Errors & Validating Data (8 lessons)<br>
+-Client-Side Form Validations<br>
+-ExpressError Class<br>
+-Error Template<br>
+-JOI Schema Validations<br>
+-JOI Validation Middleware<br>
 
-Section 44: Data Relationships With Mongo (8 lessons)
--Intro
--One to Few
--One to Many
--Mongoose Populate
--One to "Bajillions"
--Mongo Schema Design
+Section 44: Data Relationships With Mongo (8 lessons)<br>
+-Intro<br>
+-One to Few<br>
+-One to Many<br>
+-Mongoose Populate<br>
+-One to "Bajillions"<br>
+-Mongo Schema Design<br>
 
-Section 45: Mongo Relationships With Express (8 lessons)
--Farm and Product Models
--Creating Products For A Farm
--Deletion Mongoose Middleware 
+Section 45: Mongo Relationships With Express (8 lessons)<br>
+-Farm and Product Models<br>
+-Creating Products For A Farm<br>
+-Deletion Mongoose Middleware<br>
 
-Section 46: YelpCamp: Adding The Reviews Model (8 lessons)
--Adding Review Form
--Validating Reviews
--Displaying Reviews
--Styling and Deleting
--Campground Delete Middleware (relationship rule for reviews)
+Section 46: YelpCamp: Adding The Reviews Model (8 lessons)<br>
+-Adding Review Form<br>
+-Validating Reviews<br>
+-Displaying Reviews<br>
+-Styling and Deleting<br>
+-Campground Delete Middleware (relationship rule for reviews)<br>
 
-Section 47: Express Router & Cookies (8 lessons)
--Express Router Intro & Middleware
--Cookies
--Cookie Parser Middleware
--Signing Cookies
+Section 47: Express Router & Cookies (8 lessons)<br>
+-Express Router Intro & Middleware<br>
+-Cookies<br>
+-Cookie Parser Middleware<br>
+-Signing Cookies<br>
 
-Section 48: Express Session & Flash (6 lessons)
--Express Session
--Flash Intro
--Res.locals & Flash
+Section 48: Express Session & Flash (6 lessons)<br>
+-Express Session<br>
+-Flash Intro<br>
+-Res.locals & Flash<br>
 
-Section 49: YelpCam: Restructuring & Flash (7 lessons)
--Breaking Out Routes
--Configuring Session
--Setting up Flash
--Flash Success and Errors Partials
+Section 49: YelpCam: Restructuring & Flash (7 lessons)<br>
+-Breaking Out Routes<br>
+-Configuring Session<br>
+-Setting up Flash<br>
+-Flash Success and Errors Partials<br>
 
-Section 50: Authentication From "Scratch" (13 lessons)
--Authentication Vs. Authorization
--How to (not) Store Passwords
--Cryptographic Hashing Functions
--Password Salts
--Intro to Bcrypt
--Auth Demo: Setup, Registering, Login, Staying Logged In With Session, Logout, Require Login Middleware
+Section 50: Authentication From "Scratch" (13 lessons)<br>
+-Authentication Vs. Authorization<br>
+-How to (not) Store Passwords<br>
+-Cryptographic Hashing Functions<br>
+-Password Salts<br>
+-Intro to Bcrypt<br>
+-Auth Demo: Setup, Registering, Login, Staying Logged In With Session, Logout, Require Login Middleware<br>
 
-Section 51: YelpCamp: Adding in Authentication (11 lessons)
--User Model
--Configuring Passport
--Register Form and Route Logic
--Login Routes
--isLoggedIn Middleware
--Logout
--Register Route and Return To Behavior
+Section 51: YelpCamp: Adding in Authentication (11 lessons)<br>
+-User Model<br>
+-Configuring Passport<br>
+-Register Form and Route Logic<br>
+-Login Routes<br>
+-isLoggedIn Middleware<br>
+-Logout<br>
+-Register Route and Return To Behavior<br>
 
-Section 52: Yelpcamp: Basic Authorization
-(Current)
-
-
-
-
+Section 52: Yelpcamp: Basic Authorization<br>
+(Current)<br>
 
 
 
