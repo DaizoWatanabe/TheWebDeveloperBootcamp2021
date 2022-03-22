@@ -1,14 +1,16 @@
 # TheWebDeveloperBootcamp2021
 Udemy Course - 614 Lectures - 63 total hours <br>
 03/21/22 -> Currently on Authorization. <br>
+
+
 Section 1: Course Orientation
 
 Section 2: An Introduction to Web Development
 
-Section 3: HTML: The Essentials (16 lessons)
--Introduction
--Elements
--Some initial tags
+Section 3: HTML: The Essentials (16 lessons)<br>
+-Introduction<br>
+-Elements<br>
+-Some initial tags<br>
 
 Section 4: HTML: Next Steps & Semantics (10 lessons)
 -HTML5
@@ -330,7 +332,10 @@ Section 51: YelpCamp: Adding in Authentication (11 lessons)
 -Register Route and Return To Behavior
 
 Section 52: Yelpcamp: Basic Authorization
-(Current
+(Current)
+
+
+
 
 
 
