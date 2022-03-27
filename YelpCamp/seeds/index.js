@@ -28,7 +28,7 @@ const seedDB = async () => {
     const image = "https://source.unsplash.com/collection/483251";
     const price = Math.floor(Math.random() * 20) + 10;
     const description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tenetur saepe magnam quasi voluptatum, hic illum? Eos maiores delectus, qui cumque, praesentium consequuntur atque a quasi necessitatibus, quaerat saepe sed.';
-    const camp = new Campground({ title, location, image, price, description });
+    const camp = new Campground({ title, location, image, price, description, author: '623f80292dde155e232b2ec8' });
     await camp.save();
   }
 };
