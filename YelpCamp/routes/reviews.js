@@ -2,13 +2,14 @@ const express = require('express');
 const router = express.Router({ mergeParams: true });
 const Review = require('../models/review');
 const Campground = require('../models/campground');
-const { validateReview } = require('../middleware');
+const { isLoggedIn, isReviewAuthor, validateReview } = require('../middleware');
 const catchAsync = require('../utils/catchAsync');
 
-router.post('/', validateReview, catchAsync(async (req, res, next) => {
+router.post('/', isLoggedIn, validateReview, catchAsync(async (req, res, next) => {
   console.log(req.params);
   const campground = await Campground.findById(req.params.id);
   const review = new Review(req.body.review);
+  review.author = req.user._id;
   campground.reviews.push(review);
   await review.save();
   await campground.save();
@@ -17,7 +18,7 @@ router.post('/', validateReview, catchAsync(async (req, res, next) => {
 })
 );
 
-router.delete('/:reviewId', catchAsync(async (req, res, next) => {
+router.delete('/:reviewId', isLoggedIn, isReviewAuthor, catchAsync(async (req, res, next) => {
   //res.send('made it to the review deletion path')
   //const campground = await Campground.findById(req.params.id);
   //const review = await Review.findById(req.params.reviewId)
