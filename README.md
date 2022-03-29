@@ -1,6 +1,6 @@
 # TheWebDeveloperBootcamp2021
 Udemy Course - 614 Lectures - 63 total hours <br>
-03/21/22 -> Currently on Authentication. <br>
+03/21/22 -> Currently on Section 54 - Cloudinary, Multer and more! <br>
 
 
 Section 1: Course Orientation
@@ -331,8 +331,21 @@ Section 51: YelpCamp: Adding in Authentication (11 lessons)<br>
 -Logout<br>
 -Register Route and Return To Behavior<br>
 
-Section 52: Yelpcamp: Basic Authorization<br>
-(Current)<br>
+Section 52: YelpCamp: Basic Authorization<br>
+-Add author<br>
+-Permissions<br>
+-Authorization Middleware<br>
+
+Section 53: YelpCamp: Controllers & Star Ratings<br>
+-Intro to MVC<br>
+-Refactoring to add Controllers<br>
+-Add Star Ratings<br>
+
+Section 54: YelpCamp: Image Upload<br>
+-Intro to Image Upload Process
+-The Multer Middleware
+-Cloudinary
+... (Current section)
 
 
 
