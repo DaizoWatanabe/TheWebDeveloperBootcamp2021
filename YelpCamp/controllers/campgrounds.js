@@ -1,4 +1,8 @@
 const Campground = require('../models/campground');
+const { cloudinary } = require('../cloudinary');
+const mbxGeocoding = require('@mapbox/mapbox-sdk/services/geocoding');
+const mapBoxToken = process.env.MAPBOX_TOKEN;
+const geoCoder = mbxGeocoding({ accessToken: mapBoxToken });
 
 module.exports.index = async (req, res, next) => {
   const campgrounds = await Campground.find({});
@@ -16,7 +20,12 @@ module.exports.createCampground = async (req, res, next) => {
   //if(!req.body.campground) throw new ExpressError('Invalid Campground Data', 400);
   const { title, city, state, description, price } = req.body.campground;
   const location = `${city}, ${state}`;
+  const geoData = await geoCoder.forwardGeocode({
+    query: location,
+    limit: 1
+  }).send();
   const campground = new Campground({ title, location, description, price });
+  campground.geometry = geoData.body.features[0].geometry;
   campground.images = req.files.map(f => ({ url: f.path, filename: f.filename }));
   campground.author = req.user._id;
   console.log(campground);
@@ -58,7 +67,6 @@ module.exports.renderEditForm = async (req, res, next) => {
 };
 
 module.exports.updateCampground = async (req, res, next) => {
-  console.log(req.body)
   const { id } = req.params;
   const { city, state } = req.body.campground;
   const location = `${city}, ${state}`;
@@ -68,7 +76,19 @@ module.exports.updateCampground = async (req, res, next) => {
   }
   const imgs = req.files.map(f => ({ url: f.path, filename: f.filename }));
   campground.images.push(...imgs);
+  //geolocalização
+  const geoData = await geoCoder.forwardGeocode({
+    query: location,
+    limit: 1
+  }).send();
+  campground.geometry = geoData.body.features[0].geometry;
   await campground.save();
+  if (req.body.deleteImages) {
+    for (let filename of req.body.deleteImages) {
+      await cloudinary.uploader.destroy(filename);
+    }
+    await campground.updateOne({ $pull: { images: { filename: { $in: req.body.deleteImages } } } });
+  }
   req.flash('success', 'Succesfully updated the campground!');
   res.redirect(`/campgrounds/${campground._id}`);
 };

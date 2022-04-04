@@ -42,7 +42,12 @@ const seedDB = async () => {
         {
           url: "https://res.cloudinary.com/dh4pnu0ox/image/upload/v1648927983/YelpCamp/rdytfs6nvxvl6jxperrj.jpg",
           filename: "YelpCamp/rdytfs6nvxvl6jxperrj"
-        }]
+        }],
+      geometry:
+        {
+          type: 'Point',
+          coordinates: [-74.5, 40]
+        }
     });
     await camp.save();
   }
