@@ -1,6 +1,6 @@
 # TheWebDeveloperBootcamp2021
 Udemy Course - 614 Lectures - 63 total hours <br>
-03/21/22 -> Currently on Section 57 - YelpCamp: Styles and Clean Up <br>
+04/06/22 -> Currently on Section 57 - YelpCamp: Styles and Clean Up <br>
 
 
 Section 1: Course Orientation
