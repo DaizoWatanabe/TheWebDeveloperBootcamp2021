@@ -1,6 +1,6 @@
 # TheWebDeveloperBootcamp2021
 Udemy Course - 614 Lectures - 63 total hours <br>
-03/21/22 -> Currently on Section 54 - Cloudinary, Multer and more! <br>
+03/21/22 -> Currently on Section 57 - YelpCamp: Styles and Clean Up <br>
 
 
 Section 1: Course Orientation
@@ -342,10 +342,29 @@ Section 53: YelpCamp: Controllers & Star Ratings<br>
 -Add Star Ratings<br>
 
 Section 54: YelpCamp: Image Upload<br>
--Intro to Image Upload Process
--The Multer Middleware
--Cloudinary
-... (Current section)
+-Intro to Image Upload Process<br>
+-The Multer Middleware<br>
+-Cloudinary<br>
+-Displaying Images in a Carousel<br>
+-Customizing File Input<br>
+-Adding a Thumbnail Virtual Property
+
+Section 55: YelpCamp: Adding Maps<br>
+-Intro to Mapbox<br>
+-Geocoding Locations<br>
+-GeoJSON<br>
+-Displaying a Map<br>
+
+
+Section 56 - YelpCamp: Fancy Cluster Map<br>
+-Intro to Cluster Map<br>
+-Campgrounds Clustering<br>
+-Cluster Size and Colors<br>
+-Adding Custom Popups<br>
+
+Section 57 - YelpCamp: Styles and Clean Up <br>
+Current section...
+
 
 
 
