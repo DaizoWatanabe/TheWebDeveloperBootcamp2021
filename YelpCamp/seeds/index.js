@@ -22,9 +22,10 @@ const randomPos = (arr) => {
 
 const seedDB = async () => {
   await Campground.deleteMany({});
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 200; i++) {
+    const random1000 = Math.floor(Math.random() * 1000);
     const title = `${randomPos(descriptors)} ${randomPos(places)}`;
-    const location = `${randomPos(cities).city}, ${randomPos(cities).state}`;
+    const location = `${cities[random1000].city}, ${cities[random1000].state}`;
     // const image = "https://source.unsplash.com/collection/483251";
     const price = Math.floor(Math.random() * 20) + 10;
     const description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tenetur saepe magnam quasi voluptatum, hic illum? Eos maiores delectus, qui cumque, praesentium consequuntur atque a quasi necessitatibus, quaerat saepe sed.';
@@ -44,10 +45,10 @@ const seedDB = async () => {
           filename: "YelpCamp/rdytfs6nvxvl6jxperrj"
         }],
       geometry:
-        {
-          type: 'Point',
-          coordinates: [-74.5, 40]
-        }
+      {
+        type: 'Point',
+        coordinates: [cities[random1000].longitude, cities[random1000].latitude]
+      }
     });
     await camp.save();
   }
