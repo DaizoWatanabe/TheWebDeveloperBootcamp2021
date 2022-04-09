@@ -1,6 +1,6 @@
 # The Web Developer Bootcamp 2022
 Udemy Course - 614 Lectures - 63 total hours <br>
-Date of completion: April 8, 2022
+Completed: April 8, 2022
 
 ### Certifications
 
