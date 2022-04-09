@@ -1,5 +1,5 @@
 if (process.env.NODE_ENV !== 'production') {
-  require('dotenv').config();
+	require('dotenv').config();
 }
 
 const express = require('express');
@@ -33,16 +33,16 @@ const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp';
 
 //mongodb connection config
 mongoose.connect(dbUrl, {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useUnifiedTopology: true,
+	useNewUrlParser: true,
+	useCreateIndex: true,
+	useUnifiedTopology: true,
 });
 
 //db connection handler
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
-  console.log('Connection established');
+	console.log('Connection established');
 });
 
 //app initial config
@@ -57,28 +57,28 @@ app.use(mongoSanitize());
 const secret = process.env.SECRET || 'yelpcampsecret';
 
 const store = new MongoStore({
-  url: dbUrl,
-  secret,
-  touchAfter: 24 * 60 * 60
+	url: dbUrl,
+	secret,
+	touchAfter: 24 * 60 * 60
 });
 
 store.on("error", function (e) {
-  console.log("SESSION STORE ERROR", e);
+	console.log("SESSION STORE ERROR", e);
 });
 
 //session config parameters
 const sessionConfig = {
-  store,
-  name: 'ycsc',
-  secret,
-  resave: false,
-  saveUninitialized: true,
-  cookie: {
-    httponly: true,
-    //secure: true,
-    expires: Date.now() + 1000 * 60 * 60 * 24 * 7,
-    maxAge: 1000 * 60 * 60 * 24 * 7,
-  },
+	store,
+	name: 'ycsc',
+	secret,
+	resave: false,
+	saveUninitialized: true,
+	cookie: {
+		httponly: true,
+		//secure: true,
+		expires: Date.now() + 1000 * 60 * 60 * 24 * 7,
+		maxAge: 1000 * 60 * 60 * 24 * 7,
+	},
 };
 
 //session & flash
@@ -89,49 +89,49 @@ app.use(helmet());
 
 
 const scriptSrcUrls = [
-  "https://stackpath.bootstrapcdn.com/",
-  "https://api.tiles.mapbox.com/",
-  "https://api.mapbox.com/",
-  "https://kit.fontawesome.com/",
-  "https://cdnjs.cloudflare.com/",
-  "https://cdn.jsdelivr.net",
+	"https://stackpath.bootstrapcdn.com/",
+	"https://api.tiles.mapbox.com/",
+	"https://api.mapbox.com/",
+	"https://kit.fontawesome.com/",
+	"https://cdnjs.cloudflare.com/",
+	"https://cdn.jsdelivr.net",
 ];
 const styleSrcUrls = [
-  "https://kit-free.fontawesome.com/",
-  "https://stackpath.bootstrapcdn.com/",
-  "https://api.mapbox.com/",
-  "https://api.tiles.mapbox.com/",
-  "https://fonts.googleapis.com/",
-  "https://use.fontawesome.com/",
+	"https://kit-free.fontawesome.com/",
+	"https://stackpath.bootstrapcdn.com/",
+	"https://api.mapbox.com/",
+	"https://api.tiles.mapbox.com/",
+	"https://fonts.googleapis.com/",
+	"https://use.fontawesome.com/",
 ];
 const connectSrcUrls = [
-  "https://api.mapbox.com/",
-  "https://*.tiles.mapbox.com/",
-  "https://*.tiles.mapbox.com/",
-  "https://events.mapbox.com/",
+	"https://api.mapbox.com/",
+	"https://*.tiles.mapbox.com/",
+	"https://*.tiles.mapbox.com/",
+	"https://events.mapbox.com/",
 ];
 const fontSrcUrls = [];
 app.use(
-  helmet.contentSecurityPolicy({
-    directives: {
-      defaultSrc: [],
-      connectSrc: ["'self'", ...connectSrcUrls],
-      scriptSrc: ["'unsafe-inline'", "'self'", ...scriptSrcUrls],
-      styleSrc: ["'self'", "'unsafe-inline'", ...styleSrcUrls],
-      workerSrc: ["'self'", "blob:"],
-      objectSrc: [],
-      imgSrc: [
-        "'self'",
-        "blob:",
-        "data:",
-        "https://res.cloudinary.com/dh4pnu0ox/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT! 
-        "https://images.unsplash.com/",
-      ],
-      fontSrc: ["'self'", ...fontSrcUrls],
-      mediaSrc: ["https://res.cloudinary.com/dh4pnu0ox/"],
-      childSrc: ["blob:"],
-    },
-  })
+	helmet.contentSecurityPolicy({
+		directives: {
+			defaultSrc: [],
+			connectSrc: ["'self'", ...connectSrcUrls],
+			scriptSrc: ["'unsafe-inline'", "'self'", ...scriptSrcUrls],
+			styleSrc: ["'self'", "'unsafe-inline'", ...styleSrcUrls],
+			workerSrc: ["'self'", "blob:"],
+			objectSrc: [],
+			imgSrc: [
+				"'self'",
+				"blob:",
+				"data:",
+				"https://res.cloudinary.com/dh4pnu0ox/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT! 
+				"https://images.unsplash.com/",
+			],
+			fontSrc: ["'self'", ...fontSrcUrls],
+			mediaSrc: ["https://res.cloudinary.com/dh4pnu0ox/"],
+			childSrc: ["blob:"],
+		},
+	})
 );
 
 
@@ -145,10 +145,10 @@ passport.deserializeUser(User.deserializeUser());
 
 //flash use
 app.use((req, res, next) => {
-  res.locals.currentUser = req.user;
-  res.locals.success = req.flash('success');
-  res.locals.error = req.flash('error');
-  next();
+	res.locals.currentUser = req.user;
+	res.locals.success = req.flash('success');
+	res.locals.error = req.flash('error');
+	next();
 });
 
 //routers use
@@ -158,23 +158,23 @@ app.use('/', userRoutes);
 
 //home router
 app.get('/', (req, res) => {
-  res.render('campgrounds/home');
+	res.render('campgrounds/home');
 });
 
 //anything outside of what was mapped will fall into this
 app.all('*', (req, res, next) => {
-  next(new ExpressError('Page Not Found', 404));
+	next(new ExpressError('Page Not Found', 404));
 });
 
 //error handling
 app.use((err, req, res, next) => {
-  const { status = 500 } = err;
-  if (!err.message) err.message = 'Oh no! Something Went Wrong';
-  res.status(status).render('error', { err });
+	const { status = 500 } = err;
+	if (!err.message) err.message = 'Oh no! Something Went Wrong';
+	res.status(status).render('error', { err });
 });
 
 //port configuration
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`Serving on port ${port}`);
+	console.log(`Serving on port ${port}`);
 });
