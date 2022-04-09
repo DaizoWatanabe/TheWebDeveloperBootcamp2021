@@ -6,6 +6,10 @@ Date of completion: April 8, 2022
 
 - [Certificate](https://www.udemy.com/certificate/UC-baa24335-3873-4875-8d4a-b43c93b4a3c1/)
 
+### Final Project
+
+- [YelpCamp](https://thawing-hamlet-89126.herokuapp.com/)
+
 ### Course Content
 
 ### Section 1: Course Orientation
@@ -336,17 +340,17 @@ Date of completion: April 8, 2022
   • Logout<br>
   • Register Route and Return To Behavior<br>
 
-### Section 52: YelpCamp: Basic Authorization<br>
+### Section 52: YelpCamp: Basic Authorization (6 lessons)<br>
   • Add author<br>
   • Permissions<br>
   • Authorization Middleware<br>
 
-### Section 53: YelpCamp: Controllers & Star Ratings<br>
+### Section 53: YelpCamp: Controllers & Star Ratings (5 lessons)<br>
   • Intro to MVC<br>
   • Refactoring to add Controllers<br>
   • Add Star Ratings<br>
 
-### Section 54: YelpCamp: Image Upload<br>
+### Section 54: YelpCamp: Image Upload (14 lessons)<br>
   • Intro to Image Upload Process<br>
   • The Multer Middleware<br>
   • Cloudinary<br>
@@ -354,41 +358,41 @@ Date of completion: April 8, 2022
   • Customizing File Input<br>
   • Adding a Thumbnail Virtual Property
 
-### Section 55: YelpCamp: Adding Maps<br>
+### Section 55: YelpCamp: Adding Maps (7 lessons)<br>
   • Intro to Mapbox<br>
   • Geocoding Locations<br>
   • GeoJSON<br>
   • Displaying a Map<br>
 
 
-### Section 56 - YelpCamp: Fancy Cluster Map<br>
+### Section 56 - YelpCamp: Fancy Cluster Map (7 lessons)<br>
   • Intro to Cluster Map<br>
   • Campgrounds Clustering<br>
   • Cluster Size and Colors<br>
   • Adding Custom Popups<br>
 
-### Section 57 - YelpCamp: Styles and Clean Up <br>
-  • Styling Home Page
-  • Styling Login Form
-  • Styling Register Form
-  • Adding Map Controls
+### Section 57 - YelpCamp: Styles and Clean Up (7 lessons)<br>
+  • Styling Home Page<br>
+  • Styling Login Form<br>
+  • Styling Register Form<br>
+  • Adding Map Controls<br>
   
-### Section 58 - YelpCamp: Common Security Issues
-  • Mongo Injection
-  • Cross Site Scripting (XSS)
-  • Sanitizing HTML w/ Joi
-  • Minor Changes to Session/Cookies
-  • Hiding Errors
-  • Using Helmet
-  • Content Security Policy (CSP)
+### Section 58 - YelpCamp: Common Security Issues (7 lessons)<br>
+  • Mongo Injection<br>
+  • Cross Site Scripting (XSS)<br>
+  • Sanitizing HTML w/ Joi<br>
+  • Minor Changes to Session/Cookies<br>
+  • Hiding Errors<br>
+  • Using Helmet<br>
+  • Content Security Policy (CSP)<br>
   
-### Section 59 - YelpCamp: Deploying
-  • Setting up Mongo Atlas
-  • Using Mongo for Session Store
-  • Heroku Setup
-  • Pushing to Heroku
-  • Fixing Heroku Errors
-  • Configuring Heroku Env Variables
+### Section 59 - YelpCamp: Deploying (6 lessons)<br>
+  • Setting up Mongo Atlas<br>
+  • Using Mongo for Session Store<br>
+  • Heroku Setup<br>
+  • Pushing to Heroku<br>
+  • Fixing Heroku Errors<br>
+  • Configuring Heroku Env Variables<br>
 
 
 
