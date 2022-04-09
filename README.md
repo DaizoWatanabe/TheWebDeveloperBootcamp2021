@@ -2,6 +2,9 @@
 Udemy Course - 614 Lectures - 63 total hours <br>
 Completed: April 8, 2022
 
+### Main Topics
+  • HTML • CSS • Bootstrap • JavaScript • Node.js • Express.js • MongoDB • Mongoose • RESTful • EJS • Session • Cookies • Flash <br>• Passport • JOI • Cloudinary   • Mapbox • GeoJSON • Mongo Injection • XSS • Helmet • Mongo Atlas • Heroku
+
 ### Certifications
 
 - [Certificate](https://www.udemy.com/certificate/UC-baa24335-3873-4875-8d4a-b43c93b4a3c1/)
@@ -9,6 +12,11 @@ Completed: April 8, 2022
 ### Final Project
 
 - [YelpCamp](https://thawing-hamlet-89126.herokuapp.com/)
+
+### What I plan to add on the final project
+  • Password Recovery (Pending)<br>
+  • Login with other accounts (Pending)<br>
+  • Payment Methods (Pending)
 
 ### Course Content
 
