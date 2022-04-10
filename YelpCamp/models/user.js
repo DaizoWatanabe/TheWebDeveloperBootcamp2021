@@ -8,6 +8,8 @@ const UserSchema = new Schema({
     required: true,
     unique: true,
   },
+  facebookId: String,
+  googleId: String,
 });
 
 UserSchema.plugin(passportLocalMongoose);

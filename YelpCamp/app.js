@@ -15,6 +15,8 @@ const LocalStrategy = require('passport-local');
 const User = require('./models/user');
 const mongoSanitize = require('express-mongo-sanitize');
 const helmet = require("helmet");
+const FacebookStrategy = require("passport-facebook").Strategy;
+const GoogleStrategy = require("passport-google-oauth2").Strategy;
 
 //mongo store session
 const MongoStore = require('connect-mongo')(session);
@@ -103,6 +105,7 @@ const styleSrcUrls = [
 	"https://api.tiles.mapbox.com/",
 	"https://fonts.googleapis.com/",
 	"https://use.fontawesome.com/",
+	"https://cdnjs.cloudflare.com/",
 ];
 const connectSrcUrls = [
 	"https://api.mapbox.com/",
@@ -127,7 +130,7 @@ app.use(
 				"https://res.cloudinary.com/dh4pnu0ox/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT! 
 				"https://images.unsplash.com/",
 			],
-			fontSrc: ["'self'", ...fontSrcUrls],
+			fontSrc: ["'self'", ...fontSrcUrls, "https://cdnjs.cloudflare.com/"],
 			mediaSrc: ["https://res.cloudinary.com/dh4pnu0ox/"],
 			childSrc: ["blob:"],
 		},
@@ -142,6 +145,35 @@ app.use(passport.session());
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
+
+
+
+//passport-facebook
+passport.use(new FacebookStrategy({
+	clientID: process.env.FACEBOOK_APP_ID,
+	clientSecret: process.env.FACEBOOK_APP_SECRET,
+	callbackURL: "https://thawing-hamlet-89126.herokuapp.com/auth/facebook/callback"
+},
+	function (accessToken, refreshToken, profile, cb) {
+		User.findOrCreate({ facebookId: profile.id }, function (err, user) {
+			return cb(err, user);
+		});
+	}
+));
+
+//passport-google-oauth2
+passport.use(new GoogleStrategy({
+	clientID:     process.env.GOOGLE_APP_ID,
+	clientSecret: process.env.GOOGLE_APP_SECRET,
+	callbackURL: "https://thawing-hamlet-89126.herokuapp.com/auth/google/callback",
+	passReqToCallback   : true
+},
+function(request, accessToken, refreshToken, profile, done) {
+	User.findOrCreate({ googleId: profile.id }, function (err, user) {
+		return done(err, user);
+	});
+}
+));
 
 //flash use
 app.use((req, res, next) => {
