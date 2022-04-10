@@ -15,7 +15,7 @@ Completed: April 8, 2022
 
 ### What I plan to add on the final project
   • Password Recovery (Pending)<br>
-  • Login with other accounts (Pending)<br>
+  • Login with other accounts (in progress - buttons and passport.authenticate('google') and passport.authenticate('facebook') added)<br>
   • Payment Methods (Pending)
 
 ### Course Content
