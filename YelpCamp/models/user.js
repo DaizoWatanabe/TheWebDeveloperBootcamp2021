@@ -10,6 +10,8 @@ const UserSchema = new Schema({
   },
   facebookId: String,
   googleId: String,
+  resetPasswordToken: String,
+  resetPasswordExpires: Date,
 });
 
 UserSchema.plugin(passportLocalMongoose);

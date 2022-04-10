@@ -163,16 +163,16 @@ passport.use(new FacebookStrategy({
 
 //passport-google-oauth2
 passport.use(new GoogleStrategy({
-	clientID:     process.env.GOOGLE_APP_ID,
+	clientID: process.env.GOOGLE_APP_ID,
 	clientSecret: process.env.GOOGLE_APP_SECRET,
 	callbackURL: "https://thawing-hamlet-89126.herokuapp.com/auth/google/callback",
-	passReqToCallback   : true
+	passReqToCallback: true
 },
-function(request, accessToken, refreshToken, profile, done) {
-	User.findOrCreate({ googleId: profile.id }, function (err, user) {
-		return done(err, user);
-	});
-}
+	function (request, accessToken, refreshToken, profile, done) {
+		User.findOrCreate({ googleId: profile.id }, function (err, user) {
+			return done(err, user);
+		});
+	}
 ));
 
 //flash use
