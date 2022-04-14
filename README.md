@@ -3,7 +3,9 @@ Udemy Course - 614 Lectures - 63 total hours <br>
 Completed: April 8, 2022
 
 ### Main Topics
-  • HTML • CSS • Bootstrap • JavaScript • Node.js • Express.js • MongoDB • Mongoose • RESTful • EJS • Session • Cookies • Flash <br>• Passport • JOI • Cloudinary   • Mapbox • GeoJSON • Mongo Injection • XSS • Helmet • Mongo Atlas • Heroku
+  • HTML • CSS • Bootstrap • JavaScript • Node.js • Express.js • MongoDB • Mongoose  
+  • RESTful • EJS • Session • Cookies • Flash • Passport • JOI • Cloudinary   
+  • Mapbox • GeoJSON • Mongo Injection • XSS • Helmet • Mongo Atlas • Heroku
 
 ### Certifications
 
